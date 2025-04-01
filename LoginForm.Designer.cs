@@ -1,6 +1,6 @@
 ﻿namespace kursach_2_0
 {
-    partial class Form1
+    partial class LoginForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,28 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Login = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Password = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.AddRegistration = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.PhoneNumber = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.RegisterLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.ExitLabel = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Login
             // 
-            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Login.Location = new System.Drawing.Point(196, 130);
+            this.Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Login.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Login.Location = new System.Drawing.Point(196, 140);
             this.Login.Name = "Login";
-            this.Login.Size = new System.Drawing.Size(233, 53);
+            this.Login.Size = new System.Drawing.Size(233, 45);
             this.Login.TabIndex = 0;
             // 
             // label1
@@ -58,34 +57,22 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(110, 140);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 25);
+            this.label1.Size = new System.Drawing.Size(0, 25);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Логин";
             // 
             // Password
             // 
-            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(196, 211);
+            this.Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Password.Location = new System.Drawing.Point(196, 239);
             this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(233, 53);
+            this.Password.Size = new System.Drawing.Size(233, 45);
             this.Password.TabIndex = 2;
             this.Password.UseSystemPasswordChar = true;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(98, 221);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Пароль";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // AddRegistration
             // 
             this.AddRegistration.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddRegistration.Location = new System.Drawing.Point(232, 359);
+            this.AddRegistration.Location = new System.Drawing.Point(232, 327);
             this.AddRegistration.Name = "AddRegistration";
             this.AddRegistration.Size = new System.Drawing.Size(170, 33);
             this.AddRegistration.TabIndex = 4;
@@ -97,29 +84,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(226, 58);
+            this.label3.Location = new System.Drawing.Point(204, 61);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(186, 32);
             this.label3.TabIndex = 5;
             this.label3.Text = "Авторизация\r\n";
-            // 
-            // PhoneNumber
-            // 
-            this.PhoneNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumber.Location = new System.Drawing.Point(196, 290);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(233, 53);
-            this.PhoneNumber.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(1, 301);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(177, 25);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Номер телефона";
             // 
             // RegisterLabel
             // 
@@ -149,11 +118,11 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Old English Text MT", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(183, 7);
+            this.label5.Location = new System.Drawing.Point(185, 9);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(247, 27);
+            this.label5.Size = new System.Drawing.Size(218, 27);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Телефонный справочник";
+            this.label5.Text = "Рекламное агентство";
             // 
             // ExitLabel
             // 
@@ -168,29 +137,47 @@
             this.ExitLabel.Text = "х";
             this.ExitLabel.Click += new System.EventHandler(this.ExitLabel_Click);
             // 
-            // Form1
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(98, 154);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 25);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "Логин";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(98, 253);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(80, 25);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Пароль";
+            // 
+            // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(594, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.RegisterLabel);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.PhoneNumber);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.AddRegistration);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Login);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Телеонный справочник";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Рекламное агентство";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -203,15 +190,15 @@
         private System.Windows.Forms.TextBox Login;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Password;
-        private System.Windows.Forms.Label label2;
+        
         private System.Windows.Forms.Button AddRegistration;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox PhoneNumber;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label RegisterLabel;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label ExitLabel;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label2;
     }
 }
 

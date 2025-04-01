@@ -9,7 +9,7 @@ namespace kursach_2_0
 {
     internal class DataBaza
     {
-        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=nostradamus");
+        MySqlConnection connection = new MySqlConnection("server=localhost;port=3306;username=root;password=root;database=advertising_agency");
         public void openConnection()
         {
             if(connection.State == System.Data.ConnectionState.Closed)

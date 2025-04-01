@@ -16,7 +16,10 @@ namespace kursach_2_0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            DB db = new DB();
+            db.InstallDatabaseIfNotExists();
+            
+            Application.Run(new LoginForm());
         }
     }
 }
